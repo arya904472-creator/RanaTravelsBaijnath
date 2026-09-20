@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    background: #e91e63;
+    color: #ffffff;
+    padding: 28px 0;
+    border-bottom: 4px solid #111111;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+
+.header p {
+    font-size: 15px;
+}
+
+/* Sections */
+section {
+    margin: 30px 0;
+}
+
+section h2 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.about {
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Routes */
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    margin-bottom: 0;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#addRouteBtn,
+.save-btn {
+    background: #e91e63;
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 4px;
+}
+
+#addRouteBtn:hover,
+.save-btn:hover {
+    background: #c2185b;
+}
+
+.routes-list {
+    display: grid;
+    gap: 12px;
+}
+
+.no-routes {
+    padding: 25px;
+    text-align: center;
+    border: 1px dashed #bbbbbb;
+    color: #666666;
+}
+
+.route-card {
+    border-left: 5px solid #e91e63;
+    border: 1px solid #dddddd;
+    border-left-width: 5px;
+    padding: 16px;
+    background: #ffffff;
+}
+
+.route-card h3 {
+    margin-bottom: 6px;
+}
+
+/* Office */
+.office {
+    background: #f7f7f7;
+    border: 1px solid #dddddd;
+    padding: 20px;
+}
+
+.office p {
+    margin-bottom: 8px;
+}
+
+.office a {
+    color: #e91e63;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 25px;
+    border-top: 5px solid #e91e63;
+}
+
+.modal-box h2 {
+    margin-bottom: 18px;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background: none;
+    font-size: 28px;
+    color: #111111;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbbbbb;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.save-btn {
+    margin-top: 18px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 18px;
+    text-align: center;
+    background: #111111;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 26px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #addRouteBtn {
+        width: 100%;
+    }
+}
